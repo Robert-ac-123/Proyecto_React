@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "title": "Auriculares Pro 90",
+    "descripcion": "Una calidad magnifica, con un diseño elegante y cómodo.",
+    "img": "Productos/Pro90.jpg",
+    "precio": "$70.000 COP",
+    "color": "#f0f0f0"
+  },
+  {
+    "id": 1,
+    "title": "Auriculares Premium",
+    "descripcion": "Una buena opcion si no eres fan de las almuhadas de espuma, con un diseño elegante y cómodo.",
+    "img": "Productos/Premium.jpg",
+    "precio": "$60.000 COP",
+    "color": "#e8f5e9"
+  },
+  {
+    "id": 2,
+    "title": "Auriculares TWS",
+    "descripcion": "Los clasicos auriculares TWS, la vieja confiable y una eleccion segura para los que buscan algo sencillo y funcional.",
+    "img": "Productos/TWS.jpg",
+    "precio": "$55.000 COP",
+    "color": "#fff3e0"
+  }
+]
