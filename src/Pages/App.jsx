@@ -3,9 +3,15 @@ import Tar from "./Tar";
 import Inicio from "./inicio";
 import Logo from '../Componentes/Tarjeta/Logo.jsx';
 import Formulario from "../Orquestador/Formato";
+import productos from '../data.json';
+import { useState } from "react";
 
 
 export default function App(){
+    const[tarjeta,setTarjeta]=useState(productos)
+    const agregar=(nueva)=>setTarjeta([...tarjeta,nueva])
+
+
     return(
 
         <div className="pagina">
@@ -33,8 +39,8 @@ export default function App(){
             <div>
                 <Routes>
                     <Route path="/" element={ <Inicio /> } />
-                    <Route path="/Tarjetas" element={ <Tar />} />
-                    <Route path="/Formato" element={ <Formulario /> } />
+                    <Route path="/Tarjetas" element={ <Tar tarjeta={tarjeta}/>} />
+                    <Route path="/Formato" element={ <Formulario agregar={agregar}/> } />
                 </Routes>
             </div>
         </div>

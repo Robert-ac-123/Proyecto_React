@@ -1,17 +1,17 @@
 import Tarjeta from '../Orquestador/Tarjeta'
-import Robert from '../Style/data.json'
+
 import { BotonAdelante } from '../Componentes/Tarjeta/Boton'
 
-export default function Tar(){
+export default function Tar({tarjeta}){
     return(
         <div>
-        {Robert.map((productos)=>(
+        {tarjeta.map((productos)=>(
           <Tarjeta
-            title={productos.title}
+            title={productos.titulo}
             descripcion={productos.descripcion}
             color={productos.color}
             img={productos.img}
-            precio={productos.precio}
+            
           />
         ))}
          

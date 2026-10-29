@@ -1,5 +1,12 @@
-export default function Button({submit, text}){
+export default function Button({submit, text, onClick}){
     return(
-        <button type={submit}>{text}</button>
+        <div>
+            <button type={submit}
+                onClick={onClick}
+                >   
+                {text}
+            </button>
+        </div>
+        
     )
 }
