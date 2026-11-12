@@ -1,15 +1,18 @@
-export default function Campos({ title, img, descripcion, color, valor, onCambio}) {
+export default function Campos({ etiqueta,title, img, descripcion, color, valor,name, onCambio}) {
     return(
         <div>
-            <label> 
+            <label>{etiqueta} </label>
+            <input> 
+
                 title={title}
+                name={name}
                 img={img}
-                descripcion={descripcion}
+                placeholder={descripcion}
                 color={color}
                 value={valor}
                 onChange={onCambio}
-            
-            </label>
+
+            </input>  
         </div>
     ) 
 }

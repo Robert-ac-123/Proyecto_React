@@ -22,8 +22,10 @@ export default function Formulario(agregar){
       //valiable - Funcion
   const [datos, setDatos]=useState(inicial) 
   const cambiar=(e)=>{ //(e) -> Atributo/parametro, al usarlo invocamos un evento
-    setDatos({...datos,[e.target.name]:e.target.value})
-  }
+    const { name, value } = e.target;
+    setDatos({...datos,[name]:value
+    });
+  };
 
   const enviar=(e)=>{
     e.preventDefault()
@@ -52,6 +54,7 @@ export default function Formulario(agregar){
             {Entradas.map((Campo)=>(
               <Campos
                 key={Campo.name}
+                name={Campo.name}
                 title={Campo.label}
                 descripcion={Campo.descripcion}
                 color={Campo.color}
