@@ -3,7 +3,7 @@ import Tar from "./Tar";
 import Inicio from "./inicio";
 import Logo from '../Componentes/Tarjeta/Logo.jsx';
 import Formulario from "../Orquestador/Formato";
-import productos from '../data.json';
+import productos from '../Style/data.json';
 import { useState } from "react";
 
 

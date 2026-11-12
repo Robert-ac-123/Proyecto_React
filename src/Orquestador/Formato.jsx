@@ -7,14 +7,15 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const Entradas=[
-  {type:"text", titulo:" ", descripcion:"", color:''},
-  {type:"text", titulo:" ", descripcion:"", color:''},
-  {type:"text", titulo:" ", descripcion:"", color:''},
-  {type:"text", titulo:" ", descripcion:"", color:''},
+    { name: "title", label: "Título", type: "text" },
+    { name: "descripcion", label: "Descripción", type: "text" },
+    { name: "img", label: "Imagen", type: "text" },
+    { name: "color", label: "Color", type: "color" }
+
 
 ]
 
-const inicial ={titulo:'', img:'', descripcion:'', color:''}
+const inicial ={title:'', img:'', descripcion:'', color:''}
 
 export default function Formulario(agregar){
   const navigate=useNavigate()
@@ -27,7 +28,7 @@ export default function Formulario(agregar){
   const enviar=(e)=>{
     e.preventDefault()
     agregar({
-      title:datos.titulo,
+      title:datos.title,
       img:datos.img,
       descripcion:datos.descripcion,
       color:datos.color
@@ -51,10 +52,10 @@ export default function Formulario(agregar){
             {Entradas.map((Campo)=>(
               <Campos
                 key={Campo.name}
-                title={Campo.titulo}
+                title={Campo.label}
                 descripcion={Campo.descripcion}
-                color={Campo.Color}
-                valor={datos[Campo.title]}
+                color={Campo.color}
+                valor={datos[Campo.name]}
                 onCambio={cambiar}
           />
           ))}
@@ -76,7 +77,7 @@ export default function Formulario(agregar){
     </div>
 
     <Tarjeta
-      title={datos.titulo}
+      title={datos.title}
       img={datos.Imagen}
       descripcion={datos.descripcion}
       color={datos.color}
