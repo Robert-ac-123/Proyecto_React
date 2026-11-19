@@ -1,23 +1,139 @@
 [
   {
-    "id": 0,
-    "title": "Auriculares Pro 90",
-    "descripcion": "Una calidad magnifica, con un diseño elegante y cómodo.",
-    "img": "Productos/Pro90.jpg",
-    "color": "#f0f0f0"
-  },
-  {
     "id": 1,
-    "title": "Auriculares Premium",
-    "descripcion": "Una buena opcion si no eres fan de las almuhadas de espuma, con un diseño elegante y cómodo.",
-    "img": "Productos/Premium.jpg",
-    "color": "#e8f5e9"
+    "title": "Tarjeta Gráfica NVIDIA GeForce RTX 3080",
+    "descripcion": "La tarjeta gráfica de alto rendimiento para juegos y aplicaciones de diseño.",
+    "categoria": "Grafica",
+    "img": "https://http2.mlstatic.com/D_Q_NP_899992-CBT82084926764_022025-F-tarjeta-grafica-msi-gaming-geforce-rtx-3080-ventus-3x-plus-1.webp",
+    "color": "#f0f0f0",
+    "precio": "$2.500.000 COP"
   },
   {
     "id": 2,
-    "title": "Auriculares TWS",
-    "descripcion": "Los clasicos auriculares TWS, la vieja confiable y una eleccion segura para los que buscan algo sencillo y funcional.",
-    "img": "Productos/TWS.jpg",
-    "color": "#fff3e0"
+    "title": "Tarjeta Gráfica AMD Radeon RX 6800 XT",
+    "descripcion": "Una tarjeta gráfica potente para juegos y creación de contenido.",
+    "categoria": "Grafica",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkfpFvHe9VPBLj01qZnA546LrCl7B-TDo6j1q17olUWa8Yo_UduaYQax78&s=10",
+    "color": "#f5f5f5",
+    "precio": "$2.200.000 COP"
+  },
+  {
+    "id": 3,
+    "title": "Tarjeta Gráfica NVIDIA GeForce RTX 4060 Ti",
+    "descripcion": "Una tarjeta gráfica equilibrada para juegos en alta calidad.",
+    "categoria": "Grafica",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeFaxghlvcxV1S5hJfCgi9mJRFxkbPW3RhiD69u1-fVg9WglUHkHTczoha&s=10",
+    "color": "#f0f0f0",
+    "precio": "$3.500.000 COP"
+  },
+  {
+    "id": 4,
+    "title": "Procesador Intel Core i9-14900K",
+    "descripcion": "El procesador de alto rendimiento para tareas exigentes y juegos intensivos, pero necesita un buen sistema de refrigeración para mantener su temperatura bajo control.",
+    "categoria": "Procesador",
+    "img": "https://cdnx.jumpseller.com/tienda-gamer-medellin/image/49430231/resize/1200/1200?1763613781",
+    "color": "#e0f7fa",
+    "precio": "$2.000.000 COP"
+  },
+  {
+    "id": 5,
+    "title": "Procesador AMD Ryzen 9 9900X",
+    "descripcion": "El procesador más potente y eficiente del mercado, ideal para multitarea y creación de contenido.",
+    "categoria": "Procesador",
+    "img": "https://www.mipcparquecentral.com/cdn/shop/files/Procesador_AMD_Ryzen_9_9900X_6748fd74-65de-4fee-bdb1-0ed739b80c5f.jpg?v=1770772229",
+    "color": "#fce4ec",
+    "precio": "$1.100.000 COP"
+  },
+  {
+    "id": 6,
+    "title": "Procesador Intel Core i7-144700K",
+    "descripcion": "Un procesador versátil para juegos y productividad.",
+    "categoria": "Procesador",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_964718-MLA99884713751_112025-O.webp",
+    "color": "#fffde7",
+    "precio": "$900.000 COP"
+  },
+  {
+    "id": 7,
+    "title": "Disco SSD Samsung 990 Pro 1TB",
+    "descripcion": "Almacenamiento rápido y confiable para tu computadora.",
+    "categoria": "SSD",
+    "img": "https://tigercomputadores.com/wp-content/uploads/990-PRO-1TB.png",
+    "color": "#e8f5e9",
+    "precio": "$900.000 COP"
+  },
+  {
+    "id": 8,
+    "title": "Disco SSD Crucial P3 Plus 4700x1900 500GB",
+    "descripcion": "Un disco SSD de alto rendimiento para mejorar la velocidad de tu sistema.",
+    "categoria": "SSD",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvSJfoZhaGNRdWifNpg0LihMouijZC_AYvJ28h5UgRFw&s=10",
+    "color": "#fff3e0",
+    "precio": "$250.000 COP"
+  },
+  {
+    "id": 9,
+    "title": "Disco SSD Kingston 500GB",
+    "descripcion": "Un disco SSD compacto y eficiente para almacenamiento rápido.",
+    "categoria": "SSD",
+    "img": "https://tauretcomputadores.com/images/products/Product_20240831175611256390657.PNG%20500.webp",
+    "color": "#f0f0f0",
+    "precio": "$370.000 COP"
+  },
+  {
+    "id": 10,
+    "title": "Memoria RAM Corsair Vengeance ddr4 16GB",
+    "descripcion": "Memoria RAM de alto rendimiento para mejorar la velocidad de tu sistema con (2x8GB) 3200MHz.",
+    "categoria": "RAM",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_764863-MLA91857771405_092025-O.webp",
+    "color": "#e0f7fa",
+    "precio": "$300.000 COP"
+  },
+  {
+    "id": 12,
+    "title": "Memoria RAM G.Skill ddr4 32GB",
+    "descripcion": "Memoria RAM de gran capacidad para tareas exigentes y multitarea (2x16GB) 3600Mt/s.",
+    "categoria": "RAM",
+    "img": "https://m.media-amazon.com/images/I/61l4EStxhnL.jpg",
+    "color": "#fce4ec",
+    "precio": "$650.000 COP"
+  },
+  {
+    "id": 13,
+    "title": "Memoria RAM Kingston ddr5 16GB",
+    "descripcion": "Memoria RAM confiable y eficiente para mejorar el rendimiento de tu sistema (2x8GB) 5600MHz.",
+    "categoria": "RAM",
+    "img": "https://enjoyvideogames.com.co/wp-content/uploads/2025/10/0RN-001J-014H8-01_square.jpg",
+    "color": "#fffde7",
+    "precio": "$1.000.000 COP"
+  },
+  {
+    "id": 14,
+    "title": "Chasis Iceberg Flow E blanco",
+    "descripcion": "Chasis de alto rendimiento para mejorar la ventilación y el diseño de 4 ventiladores preinstalados.",
+    "categoria": "Gabinete",
+    "img": "https://themark.com.co/wp-content/uploads/2024/07/PORTATIL-64.jpg",
+    "color": "#e8f5e9",
+    "precio": "$350.000 COP"
+
+  },
+  {
+    "id": 15,
+    "title": "Chasis Cougar FV150 RGB",
+    "descripcion": "Chasis con diseño elegante y ventilación optimizada para mantener tus componentes frescos, especializado en el amplio espacio que posee.",
+    "categoria": "Gabinete",
+    "img": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSVJb-EhagRGbYmevd7XVY5ssUS_Ejlay9xV0JtMUkCvGw1DPoJ1cdHsNuA4pDP8hO6MLB0kSvkpY3QxrRu46VnN1Csz17vdX0AT46tGERTZ2gh3BgA9FwOWTY",
+    "color": "#fff3e0",
+    "precio": "$350.000 COP"
+  },
+  {
+    "id": 16,
+    "title": "Fuente de Alimentación Corsair RM850 850W",
+    "descripcion": "Fuente de alimentación de alta eficiencia y confiable para tu sistema.",
+    "categoria": "Fuente de Alimentación",
+    "img": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQaqUc3bjt241_zZvRi0AR_5kDLhjsUt4wafWKQY0VWaPKqqPV9OPQVXXjzUYJGX7Li-X25nnLazQog73vC_CFXxysFht_WEFojBRtfo47R7sQn6wa-0AcR",
+    "color": "#f0f0f0",
+    "precio": "$500.000 COP"
   }
+
 ]

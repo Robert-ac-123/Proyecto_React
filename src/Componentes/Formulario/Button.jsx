@@ -1,12 +1,9 @@
-export default function Button({submit, text, onClick}){
+export default function Button({type, text, onClick}){
     return(
         <div>
-            <button type={submit}
-                onClick={onClick}
-                >   
+            <button type={type}onClick={onClick}>   
                 {text}
             </button>
         </div>
-        
-    )
+    );
 }

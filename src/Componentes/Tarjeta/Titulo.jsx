@@ -1,5 +1,5 @@
 export default function Titulo({title}){
     return(
-        <h1>{title}</h1>
+        <h2 className="titulo-tarjeta">{title}</h2>
     )
 }

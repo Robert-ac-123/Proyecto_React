@@ -1,15 +1,17 @@
+import '../Style/Tarjeta.css'; 
 import { Routes, Route, Link } from "react-router-dom";
+import { useState } from "react";
 import Tar from "./Tar";
 import Inicio from "./inicio";
 import Logo from '../Componentes/Tarjeta/Logo.jsx';
-import Formulario from "../Orquestador/Formato";
-import productos from '../data.json';
-import { useState } from "react";
+import FormularioPage from "./FormularioPage.jsx";
+import useTarjetas from "../Hook/useTarjetas.js";
 
 
 export default function App(){
-    const[tarjeta,setTarjeta]=useState(productos)
-    const agregar=(nueva)=>setTarjeta([...tarjeta,nueva])
+
+    const { tarjeta, agregar, editar, eliminar } = useTarjetas();
+    const [tarjetaEditada, setTarjetaEditada] = useState(null); 
 
 
     return(
@@ -25,22 +27,34 @@ export default function App(){
             </div>
           
         </div>
-      </header>
+        </header>
 
-      <h1 className="titulo-principal">La mejor tecnologia</h1>
+        <h1 className="titulo-principal">La mejor tecnologia</h1>
 
         <div>
-            <nav className="menu ul">
-                <Link to="/">Inicio</Link>
-                <Link to="/Tarjetas">Tarjetas</Link>
-                <Link to="/Formato">Formulario</Link>
+            <nav className="navbar">
+                <div className="navbar-links">
+                    <Link to="/">Inicio</Link>
+                    <Link to="/Tarjetas">Elementos</Link>
+                    <Link to="/Formulario">Creacion</Link>
+                </div>
             </nav>
 
             <div>
                 <Routes>
                     <Route path="/" element={ <Inicio /> } />
-                    <Route path="/Tarjetas" element={ <Tar tarjeta={tarjeta}/>} />
-                    <Route path="/Formato" element={ <Formulario agregar={agregar}/> } />
+                    <Route path="/Tarjetas" element={ <Tar tarjeta={tarjeta} eliminar={eliminar} setTarjetaEditada={setTarjetaEditada}/> } />
+
+
+                    <Route path="/Formulario" element={
+                        <FormularioPage 
+                            key={tarjetaEditada ? tarjetaEditada.id : 'nueva'} 
+                            agregar={agregar} 
+                            editar={editar} 
+                            tarjetaEditada={tarjetaEditada}
+                            setTarjetaEditada={setTarjetaEditada}
+                        />
+                    } />
                 </Routes>
             </div>
         </div>
